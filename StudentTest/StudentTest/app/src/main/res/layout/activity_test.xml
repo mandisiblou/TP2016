@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="za.co.test.TestActivity" >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblQuestion"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:text="Question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/lblQuestion"
+            android:id="@+id/lblOption1"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#ff16ff01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/lblOption1"
+            android:id="@+id/lblOption2"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#ff16ff01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/lblOption2"
+            android:id="@+id/lblOption3"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#ff16ff01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/lblOption3"
+            android:id="@+id/lblOption4"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#ff16ff01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/lblOption4"
+            android:id="@+id/lblOption5"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#ff16ff01" />
+
+        <EditText
+            android:id="@+id/txtAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblCountry"
+            android:layout_below="@+id/lblOption5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtAnswer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="100dp"
+            android:onClick="writeTest"
+            android:text="@string/next" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>
+
